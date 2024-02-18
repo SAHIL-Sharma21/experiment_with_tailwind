@@ -14,11 +14,31 @@
     </div> -->
 
     <!-- below tailwind for making 3 col layout with same width above small device  -->
-    <div class="m-4 grid gap-2 sm:grid-cols-3"> 
+    <!-- <div class="m-4 grid gap-2 sm:grid-cols-3"> 
         <div class="bg-orange-400 rounded min-h-[100px]"></div>
         <div class="bg-teal-400 rounded min-h-[100px]"></div>
         <div class="bg-red-400 rounded min-h-[100px]"></div>
-    </div>
+    </div> -->
+
+    <!-- below tailwind for making non-Equal layout for 2 col for device above small -->
+    <!-- <div class="m-4 grid gap-2 sm:grid-cols-12"> 
+        <div class="bg-orange-400 rounded min-h-[100px] sm:col-span-4"></div>
+        <div class="bg-teal-400 rounded min-h-[100px] sm:col-span-8"></div>
+    </div> -->
+
+        <!-- below tailwind for making non-Equal layout for 3 col for device above small  sm is like we are loking fro smaller to above mtlb badi screen ki chinta kr rahe hai-->
+        <div class="m-4 grid gap-2 sm:grid-cols-12"> 
+            <div class="bg-orange-400 rounded min-h-[100px] sm:col-span-2"></div> 
+            <div class="bg-teal-400 rounded min-h-[100px] sm:col-span-7"></div>
+            <div class="bg-red-400 rounded min-h-[100px] sm:col-span-3"></div>
+        </div>
+
+        <!-- below the exact same layout as twitter and tailwind as it div 1 and div 2 are hidden inn smaller devices and it will be visible in larger screen  -->
+        <div class="m-4 grid gap-2 sm:grid-cols-12">
+            <div class="bg-violet-400 rounded min-h-[100px] sm:col-span-2 hidden sm:block"></div>
+            <div class="bg-yellow-400 rounded min-h-[100px] sm:col-span-8"></div>
+            <div class="bg-pink-400 rounded min-h-[100px] sm:col-span-2 hidden sm:block"></div>
+        </div>
 
 </body>
 </html>
