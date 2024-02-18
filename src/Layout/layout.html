@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css">
     <title>building any layout in tailwind</title>
 </head>
 <body>
-    <div>
-        <div class="bg-orange-400">1</div>
-        <div class="bg-teal-400">2</div>
+    <!-- below tailwind for making 2 col layout with same width above small device  -->
+    <!-- <div class="m-4 grid gap-2 sm:grid-cols-2"> 
+        <div class="bg-orange-400 rounded min-h-[100px]"></div>
+        <div class="bg-teal-400 rounded min-h-[100px]"></div>
+    </div> -->
+
+    <!-- below tailwind for making 3 col layout with same width above small device  -->
+    <div class="m-4 grid gap-2 sm:grid-cols-3"> 
+        <div class="bg-orange-400 rounded min-h-[100px]"></div>
+        <div class="bg-teal-400 rounded min-h-[100px]"></div>
+        <div class="bg-red-400 rounded min-h-[100px]"></div>
     </div>
 
 </body>
